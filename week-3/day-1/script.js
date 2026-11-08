@@ -14,11 +14,10 @@ console.log(exampleName, exampleYears, exampleIsOpen);
 console.log(typeof exampleName);     // typeof tells you the type
 
 // TODO: Make 3 variables for YOUR truck: a name, a number, and a true/false.
-// TODO: console.log them, and log the typeof each one.
 const truckName = "Tees BBQ Bus";
 const yearsInBusiness = 5;
 const isOpen = true;
-
+// TODO: console.log them, and log the typeof each one.
 console.log(truckName, yearsInBusiness, isOpen);
 console.log(typeof truckName);
 console.log(typeof yearsInBusiness);
@@ -31,8 +30,8 @@ console.log(exampleMenu[0]);         // first item: index 0
 console.log(exampleMenu.length);     // how many items
 
 // TODO: Make an array of 3 or more things YOUR truck sells.
-// TODO: Log the first item, the last item, and how many items there are.
 const myMenu = ["pulled pork sandwich", "brisket plate", "mac and cheese", "coleslaw"];
+// TODO: Log the first item, the last item, and how many items there are.
 console.log(myMenu[0]); // first item: index 0
 console.log(myMenu[myMenu.length - 1]); // last item:
 console.log(myMenu.length); // how many items
@@ -44,8 +43,9 @@ console.log(exampleItem.name);       // dot notation
 console.log(exampleItem["price"]);   // bracket notation
 
 // TODO: Make an object for one of YOUR menu items (name, price, spicy).
-// TODO: Log one property with dot notation and one with bracket notation.
 const myMenuItem = { name: "pulled pork sandwich", price: 8.99, spicy: false };
+
+// TODO: Log one property with dot notation and one with bracket notation.
 console.log(myMenuItem.name); // dot notation
 console.log(myMenuItem["price"]); // bracket notation
 
@@ -57,10 +57,11 @@ function addTip(price, tip) {
 console.log(addTip(10, 2));          // 12
 
 // TODO: Write a function orderTotal(price, quantity) that RETURNS price * quantity.
-// TODO: Before you run it, guess what orderTotal(4.5, 3) gives. Then log it.
 function orderTotal(price, quantity) {
   return price * quantity;
 }
+// TODO: Before you run it, guess what orderTotal(4.5, 3) gives. Then log it.
+
 console.log(orderTotal(4.5, 3));
 
 // ---------- Extra practice (if you finish early) ----------
