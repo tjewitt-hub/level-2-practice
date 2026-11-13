@@ -12,6 +12,7 @@ const menu = [
   { name: "Slab of ribs", price: 9 },
   { name: "Brisket Nachos", price: 6.25 },
   { name: "Banana Pudding", price: 3 },
+  { name: "Mac and Cheese", price: 5.5 },
 ];
 
 
@@ -46,14 +47,16 @@ for (let i = 0; i < menu.length; i++) {
 // EXAMPLE: puts every NAME on the page, one per line. (Same as Menu Card.)
 const menuText = document.querySelector("#menu-text");
 menuText.textContent = "";
-for (let i = 0; i < menu.length; i++) {
-  menuText.textContent = menuText.textContent + menu[i].name + "\n";
-}
+//for (let i = 0; i < menu.length; i++) {
+ // menuText.textContent = menuText.textContent + menu[i].name + "\n";
+//}
 
 // YOUR TURN: don't copy this one. Change the example above,
 // so each line shows the name AND the price, like "Taco: $4.5".
 // Change one thing: menu[i].name → menu[i].name + ": $" + menu[i].price
-
+for (let i = 0; i < menu.length; i++) {
+  menuText.textContent = menuText.textContent + menu[i].name + ": $" + menu[i].price + "\n";
+}
 
 // ---------- Step 4: Add up a total ----------
 // EXAMPLE: COUNT the items. count starts at 0 BEFORE the loop,
@@ -66,6 +69,11 @@ console.log("Items:", count);
 
 // YOUR TURN: add up every PRICE into a total. Log it.
 // Change: count → total, and + 1 → + menu[i].price
+let total = 0;
+for (let i = 0; i < menu.length; i++) {
+  total = total + menu[i].price;
+}
+console.log("Total:", total);
 
 
 // ---------- Extra (if you finish early): only SOME items ----------
