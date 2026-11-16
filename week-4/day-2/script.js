@@ -9,9 +9,11 @@
 
 // First: replace this menu with YOUR truck's menu (keep the same shape).
 const menu = [
-  { name: "Taco", price: 4.5 },
-  { name: "Burrito", price: 9 },
-  { name: "Nachos", price: 6.25 },
+  { name: "Brisket Sandwich", price: 4.5 },
+  { name: "Slab of ribs", price: 9 },
+  { name: "Brisket Nachos", price: 6.25 },
+  { name: "Banana Pudding", price: 3 },
+  { name: "Mac &amp; Cheese", price: 5.5 },
 ];
 
 // getElementById finds ONE element by its id. Same job as querySelector("#card-area"),
@@ -39,6 +41,12 @@ menu.forEach(function (item) {
   const itemCard = document.createElement("div");
   itemCard.className = "card p-3 text-center shadow-sm";
   itemCard.textContent = item.name + ": $" + item.price;
+
+  if (item.price < 5) {
+    itemCard.className = "card p-3 bg-success-subtle"; 
+  } else {
+    itemCard.className = "card p-3 text-center shadow-sm";
+  }
   area.appendChild(itemCard);
 });
 
