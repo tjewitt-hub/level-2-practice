@@ -2,7 +2,7 @@
 // Nothing new today. This is Monday's forEach + Tuesday's createElement, together.
 
 // First: replace this list with YOUR truck's six things.
-const things = ["Tacos", "Burritos", "Nachos", "Churros", "Drinks", "Specials"];
+const things = ["Brisket Sandwich", "Slab of ribs", "Brisket Nachos", "Mac &amp; Cheese", "Banana Pudding", "drinks", "Specials"];
 
 const grid = document.getElementById("js-grid");
 
