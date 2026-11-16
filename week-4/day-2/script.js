@@ -28,14 +28,17 @@ area.appendChild(card);                        // 4. put it inside #card-area. N
 
 // YOUR TURN: make a second card that says your truck's name.
 // Change: card → card2 (4 places), and the text.
-
+const card2 = document.createElement("div");
+card2.className = "card p-3";
+card2.textContent = "Tees BBQ Bus";
+area.appendChild(card2);
 
 // ---------- Step 2: A card for EVERY item ----------
 // EXAMPLE: the same 4 moves, inside forEach. One card per menu item.
 menu.forEach(function (item) {
   const itemCard = document.createElement("div");
-  itemCard.className = "card p-3";
-  itemCard.textContent = item.name;
+  itemCard.className = "card p-3 text-center shadow-sm";
+  itemCard.textContent = item.name + ": $" + item.price;
   area.appendChild(itemCard);
 });
 
