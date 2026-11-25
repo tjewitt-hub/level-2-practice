@@ -35,7 +35,7 @@ console.log("Wind Speed: ", data.current.wind_speed_10m);
   // EXAMPLE: the number, plus its unit (the unit lives in current_units).
   const weather = document.getElementById("weather");
   weather.textContent = "Temperature: " + data.current.temperature_2m + " " +
-    data.current_units.temperature_2m + " . Wind: " + data.current.wind_speed_10m + data.current_units.wind_speed_10m;
+    data.current_units.temperature_2m + " " + "Wind Speed: " + data.current.wind_speed_10m + data.current_units.wind_speed_10m;
 
   // YOUR TURN: don't copy this one. Change the example above,
   // so the page also shows the wind speed and its unit.
